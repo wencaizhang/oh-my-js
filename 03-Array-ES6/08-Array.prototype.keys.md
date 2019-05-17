@@ -1,0 +1,28 @@
+# Array.prototype.keys()
+
+## 描述
+
+返回一个包含数组中每个索引的 Array Iterator 对象。
+
+## 示例
+
+```js
+var arr = [ 'a', 'b', 'c' ];
+
+var result = arr.keys();
+
+result.next();
+// {value: 0, done: false}
+
+result.next();
+// {value: 1, done: false}
+
+result.next();
+// {value: 2, done: false}
+
+result.next();
+// {value: undefined, done: true}
+
+result.next();
+// {value: undefined, done: true}
+```
