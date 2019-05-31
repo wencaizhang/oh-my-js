@@ -1,5 +1,5 @@
 
-# 写给自己看到 JavaScript 参考手册
+# 写给自己看的 JavaScript 参考手册
 
 ## What is this
 
