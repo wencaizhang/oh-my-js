@@ -1,9 +1,7 @@
 
-# JavaScript 核心参考手册
+# 写给自己看的 JavaScript 参考手册
 
 ## What is this
-
-**JavaScript 速查手册！**
 
 此文档为本人复习 JavaScript 基础知识时所整理，文档内容来自以下网站以及个人的理解：
 
