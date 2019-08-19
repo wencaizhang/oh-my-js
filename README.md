@@ -1,4 +1,7 @@
 
+> **最新通知：本仓库不再更新，所有内容已经合并到 [wencaizhang.github.io](https://github.com/wencaizhang/wencaizhang.github.io) 仓库中.**
+
+
 # 写给自己看的 JavaScript 参考手册
 
 ## What is this
@@ -18,7 +21,7 @@
 
 ## 地址
 
-文档地址：[http://wencaizhang.com/oh-my-js/](http://wencaizhang.com/oh-my-js/)
+文档地址：[https://coolfe.fun/oh-my-js/](https://coolfe.fun/oh-my-js/)
 
 备用地址：[https://wencaizhang.github.io/oh-my-js/](https://wencaizhang.github.io/oh-my-js/)
 
