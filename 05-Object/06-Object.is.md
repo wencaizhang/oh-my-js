@@ -1,4 +1,12 @@
-# Object.is()
+---
+title: Object.is()
+linktitle: Object.is()
+toc: true
+type: "docs"
+date: 2019-05-05T00:00:00+01:00
+draft: false
+group: Object
+---
 
 ## 描述
 

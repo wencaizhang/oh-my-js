@@ -1,4 +1,12 @@
-# Array.prototype.push()
+---
+title: push()
+linktitle: push()
+toc: true
+type: "docs"
+date: "2019-05-05T00:00:00+01:00"
+draft: false
+group: ES3 Array
+---
 
 ## 描述
 

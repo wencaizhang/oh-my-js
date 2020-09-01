@@ -1,11 +1,26 @@
-[TOC]
-# 正则表达式
+---
+title: 正则表达式基础知识
+linktitle: 正则表达式基础知识
+toc: true
+type: "docs"
+date: 2019-05-05T00:00:00+01:00
+draft: false
+group: Regexp
+---
 
->正则表达式验证工具： https://regexper.com/
+>正则表达式验证工具： [https://regexper.com/](https://regexper.com/) 或者 [http://regexper.cn/](http://regexper.cn/)
+
+> [正则表达式教程](https://github.com/ziishaned/learn-regex/blob/master/translations/README-cn.md)
 
 ## 创建正则表达式
 
-### 构造函数
+最简单的方式是通过字面量创建：
+
+```js
+var reg = /[a-zA-Z]/gi;
+```
+
+也可以通过 `RegExp` 构造函数来创建：
 
 ```js
 var reg1 = new RegExp('a');
@@ -13,11 +28,6 @@ var reg2 = new RegExp('[a-zA-Z]', 'gi');
 var reg3 = new RegExp(/[a-zA-Z]/, 'gi');
 ```
 
-### 字面量
-
-```js
-var reg = /[a-zA-Z]/gi;
-```
 
 ## 修饰符
 
@@ -61,15 +71,15 @@ console.log(reg2.source);        // "\w"
 
 | 表达式    | 描述 |
 | ---       | --- |
-| [abc] | 匹配方括号之间的任何字符 |
-| [^abc] | 匹配任何不在方括号之间的字符 |
-| [0-9] | 匹配任何从 0 至 9 的数字 |
-| [a-z] | 匹配任何从小写 a 到小写 z 的字符 |
-| [A-Z] | 匹配任何从大写 A 到大写 Z 的字符 |
-| [A-z] | 	匹配任何从大写 A 到小写 z 的字符 |
-| [adgk] | 匹配给定集合内的任何字符 |
-| [^adgk] | 匹配给定集合外的任何字符 |
-| (red|blue|green) | 	匹配任何指定的选项 |
+| `[abc]` | 匹配方括号之间的任何字符 |
+| `[^abc]` | 匹配任何不在方括号之间的字符 |
+| `[0-9]` | 匹配任何从 0 至 9 的数字 |
+| `[a-z]` | 匹配任何从小写 a 到小写 z 的字符 |
+| `[A-Z]` | 匹配任何从大写 A 到大写 Z 的字符 |
+| `[A-z]` | 	匹配任何从大写 A 到小写 z 的字符 |
+| `[adgk]` | 匹配给定集合内的任何字符 |
+| `[^adgk]` | 匹配给定集合外的任何字符 |
+| `(red|blue|green)` | 	匹配任何指定的选项 |
 
 ## 子表达式
 
@@ -140,4 +150,4 @@ console.log(ans); // world hello
 
 5. 可以使用 `|` 来表示或的关系，例如 `[z|j|q]` 表示匹配 `z` 、 `j` 、 `q` 之中的任意一个字母。
 
-6. 正则验证工具： https://regexper.com/ 
+6. 正则验证工具： [https://regexper.com/](https://regexper.com/) 或者 [http://regexper.cn/](http://regexper.cn/)

@@ -1,4 +1,12 @@
-# 字符串大小写转换
+---
+title: 字符串大小写转换
+linktitle: 字符串大小写转换
+toc: true
+type: "docs"
+date: 2019-05-05T00:00:00+01:00
+draft: false
+group: String
+---
 
 ## String.prototype.toLowerCase
 

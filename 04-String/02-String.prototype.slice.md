@@ -1,4 +1,13 @@
-# String.prototype.slice
+---
+title: slice
+linktitle: slice
+toc: true
+type: "docs"
+date: "2019-05-05T00:00:00+01:00"
+draft: false
+
+group: String
+---
 
 slice() 方法用于从字符串中切割出一部分，它接收两个参数：切割范围的起始索引和结束索引。
 

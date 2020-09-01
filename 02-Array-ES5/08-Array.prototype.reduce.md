@@ -1,4 +1,12 @@
-# Array.prototype.reduce()
+---
+title: reduce()
+linktitle: reduce()
+toc: true
+type: "docs"
+date: "2019-05-05T00:00:00+01:00"
+draft: false
+group: Array ES5
+---
 
 > reduce: 减少，缩小。但是 `reduce()` 方法并无此含义，而是“迭代，递归”。
 

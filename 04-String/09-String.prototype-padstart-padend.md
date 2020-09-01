@@ -1,4 +1,12 @@
-# padStart 和 padEnd
+---
+title: padStart 和 padEnd
+linktitle: padStart 和 padEnd
+toc: true
+type: "docs"
+date: 2019-05-05T00:00:00+01:00
+draft: false
+group: String
+---
 
 ## padStart
 

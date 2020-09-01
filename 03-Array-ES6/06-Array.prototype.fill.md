@@ -1,4 +1,14 @@
-# Array.prototype.fill()
+---
+title: fill()
+linktitle: fill()
+toc: true
+type: "docs"
+date: "2019-05-05T00:00:00+01:00"
+draft: false
+
+
+group: Array ES6
+---
 
 > 填充数组
 

@@ -1,4 +1,12 @@
-# Object.defineProperty
+---
+title: Object.defineProperty
+linktitle: Object.defineProperty
+toc: true
+type: "docs"
+date: 2019-05-05T00:00:00+01:00
+draft: false
+group: Object
+---
 
 ::: tip
 Vue.js@2.x 的响应式系统就是利用 Object.defineProperty 实现的，参考 [深入响应式原理](https://cn.vuejs.org/v2/guide/reactivity.html)
