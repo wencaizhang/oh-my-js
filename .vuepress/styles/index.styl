@@ -1,0 +1,344 @@
+
+// 左上角 logo 文案
+.navbar .site-name
+  font-size 1.8rem
+  font-family x-locale-heading-primary,zillaslab,Palatino,"Palatino Linotype",x-locale-heading-secondary,'Source Han Serif SC', STZhongsong, "Source Han Sans CN", 'PingFang SC', 'Myriad Pro', 'Hiragino Sans GB', SimHei
+
+h1, h2, h3
+  font-family  x-locale-heading-primary,zillaslab,Palatino,"Palatino Linotype",x-locale-heading-secondary,'Source Han Serif SC', STZhongsong, "Source Han Sans CN", 'PingFang SC', 'Myriad Pro', 'Hiragino Sans GB', SimHei
+  
+.page .content code
+  color #e96900
+  padding 3px 5px
+  margin 0 2px
+  border-radius 2px
+
+code, pre
+  // font-family source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace
+  // font-size 1em
+  // background-color #f8f8f8
+  -webkit-font-smoothing initial
+  -moz-osx-font-smoothing initial
+
+body
+  letter-spacing .5px
+
+// 复制按钮
+.btn-copy
+  position: absolute;
+  z-index: 3;
+  top: 0.8em;
+  right: 1em;
+  font-size: 0.75rem;
+  cursor: pointer;
+  color: rgba(255,255,255,0.4);
+
+// QR
+#qrcode
+  position: absolute;
+  left: 160px;
+  top: 0;
+  z-index: 101;
+  width: 100px;
+  height: 100px;
+
+#qrcode img
+  width: 100%;
+  height: 100%;
+
+
+.sidebar
+  padding-bottom: 150px;
+
+.music-container
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  height: 100px;
+
+header.navbar .links 
+  right: 6.5rem;
+
+
+// 文章内部 a 链接
+// CSS实现文字下面波浪线动画效果
+// https://www.zhangxinxu.com/wordpress/2019/04/css-wave-wavy-animation/
+.theme-default-content:not(.custom) a:hover:hover {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 4'%3E%3Cpath fill='none' stroke='%233eaf7c' d='M0 3.5c5 0 5-3 10-3s5 3 10 3 5-3 10-3 5 3 10 3'/%3E%3C/svg%3E") repeat-x 0 100%; 
+  background-size: 20px auto;
+  animation: waveMove 1s infinite linear;
+  text-decoration: none;
+}
+@keyframes waveMove {
+    from { background-position: 0 100%; }
+    to   { background-position: -20px 100%; }
+}
+
+// 首页a链接
+// 标题/导航 a 链接
+.custom a,
+.nav-links a {
+  position: relative;
+  display: inline-block;
+  border-bottom: 0!important;
+}
+
+.custom a:before,
+.nav-links a:before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  height: 1px;
+  bottom: 0;
+  left: 51%;
+  right: 51%;
+  background-color: #46bd87;
+  transition-duration: 0.2s;
+  transition-property: right, left;
+  transition-timing-function: ease-out;
+}
+.custom a:hover:before,
+.nav-links a:hover:before {
+  left: 0;
+  right: 0;
+}
+
+
+// =================================================================
+
+@media (min-width: 719px)
+  .features a:not(.external):hover
+    border-bottom 2px solid #46bd87
+
+
+// =================================================================
+
+
+@-webkit-keyframes logo-blink {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-10%);
+    transform: translateX(-10%);
+  }
+  5% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 1;
+  }
+  39% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  60% {
+    opacity: 0.8;
+  }
+  65% {
+    opacity: 0.8;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  70% {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+}
+@keyframes logo-blink {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-10%);
+    transform: translateX(-10%);
+  }
+  5% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 1;
+  }
+  39% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  60% {
+    opacity: 0.8;
+  }
+  65% {
+    opacity: 0.8;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  70% {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+}
+
+// =================================================================
+
+.sidebar
+  .sidebar-heading
+    display flex
+    justify-content space-between
+    align-items center
+
+  .sidebar-sub-headers
+
+    a.sidebar-link
+      border-left 1px solid $borderColor
+    a.sidebar-link.active
+      color $accentColor
+      border-left 1px solid $accentColor
+      border-right none
+      background-color #fff
+
+  a.sidebar-link
+    border-right 0.12rem solid transparent
+    border-left 0
+    &.active
+      font-weight 400
+      color $accentColor
+      border-color $accentColor
+      background-color #dbf3e8
+
+@media (min-width: 719px)
+  .page
+    padding-right 20rem
+
+  .sidebar-sub-headers
+    font-size 15px
+    background-color #fff
+    width $sidebarWidth
+    position fixed
+    z-index 10
+    margin 0
+    top $navbarHeight
+    right 0
+    bottom 0
+    box-sizing border-box
+
+    overflow-y auto
+    padding-left 0
+@media (max-width: 719px)
+  .theme-container .page
+    padding-right 0
+// =================================================================
+
+
+// ---------
+// 警告：此文件名不能命名为 code.styl
+// 否则会覆盖主题默认的 code.styl 文件
+// ---------
+
+// 左上角 3 个彩色原点
+div[class*="language-"]::after
+  position: absolute;
+  top: 16px;
+  left: 18px;
+  content: "";
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: #ff5f56;
+  -webkit-box-shadow: 18px 0 0 0 #ffbd2e, 36px 0 0 0 #27c93f;
+  box-shadow: 18px 0 0 0 #ffbd2e, 36px 0 0 0 #27c93f;
+  
+// 原右上角，代码块语言类型，转移到左侧，
+div[class*="language-"]::before
+  top: 1.1em;
+  left: 6em;
+
+div[class*="language-"].line-numbers-mode
+  overflow: hidden;
+  margin-top: 1rem;
+
+  pre, pre[class*="language-"]
+    margin 0
+    
+  pre, pre[class*="language-"],
+  .line-numbers-wrapper
+    padding-top 2.5rem
+
+
+
+.sidebar-heading.open, .sidebar-heading:hover {
+    color: #3eaf7c!important;
+}
+.sidebar-heading.open {
+    background: #dbf3e8!important;
+    border-top-left-radius: 25px!important;
+    border-bottom-left-radius: 25px!important;
+}
+.theme-default-content pre {
+    padding-top: 3rem!important;
+}
+
+
+
+.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog {
+    color: #999
+}
+
+.token.punctuation {
+    color: #45526b
+}
+
+.token.attr-name,.token.deleted,.token.namespace,.token.tag {
+    color: #6a46d1
+}
+
+.token.function-name {
+    color: #6196cc
+}
+
+.token.boolean,.token.class-name,.token.constant,.token.function,.token.number,.token.property,.token.symbol {
+    color: #6a46d1
+}
+
+.token.atrule,.token.attr-value,.token.builtin,.token.char,.token.entity,.token.important,.token.keyword,.token.operator,.token.regex,.token.selector,.token.string,.token.url,.token.variable {
+    color: #3683d6
+}
+
+.token.bold,.token.important {
+    font-weight: 700
+}
+
+.token.italic {
+    font-style: italic
+}
+
+.token.entity {
+    cursor: help
+}
+
+.token.inserted {
+    color: green
+}
+
+div[class*=language-] {
+    position: relative;
+    background-color: #e9f0f8;
+    border-radius: 6px;
+    color: #0984e3!important;
+}
+
+div[class*=language-], 
+div[class*=language-] code {
+    color: #333!important;
+}
