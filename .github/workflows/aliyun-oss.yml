@@ -1,0 +1,21 @@
+name: Deploy to aliyun oss
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: checkout
+        uses: actions/checkout@v2
+        with:
+          ref: gh-pages
+
+      - name: setup aliyun oss
+        uses: manyuanrong/setup-ossutil@v1.0
+        with:
+          endpoint: oss-cn-beijing.aliyuncs.com
+          access-key-id: ${{ secrets.OSS_KEY_ID }}
+          access-key-secret: ${{ secrets.OSS_KEY_SECRET }}
+
+      - name: copy
+        run: ossutil cp -rf ./ oss://website-zwc/oh-my-js

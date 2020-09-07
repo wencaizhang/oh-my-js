@@ -1,5 +1,5 @@
 module.exports = {
-  base: '/oh-my-js',
+  base: '/oh-my-js/',
   title: 'oh-my-js',
   description: '',
   // plugins: ['@vuepress/pwa', '@vuepress/back-to-top'],
