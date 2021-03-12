@@ -186,3 +186,53 @@ console.log( 'age:', obj.age )
 // newValue: 22
 // age: undefined
 ```
+
+## 使一个对象只可读不可写
+
+有 Vue.js 开发经验的都知道给 Vue 原型上挂载一个对象之后就可以直接在组件内部直接使用 `this` 访问到。
+
+```js
+// 挂载 axios
+Vue.prototype.$http = axios
+
+// 组件内通过 `this` 访问
+this.$http.get('/api/something')
+```
+
+官方路由库 [`vue-router`](https://router.vuejs.org/zh/) 向 Vue 原型上挂载了 `$router` 和 `$route` 两个，但是不同之处是 `vue-router` 为了避免被人修改 `$router` 和 `$route` 的值，它使用了 `Object.defineProperty` 方法来限制对这个对象的写入。
+
+
+
+[vue-router: install.js](https://github.com/vuejs/vue-router/blob/f597959b14887cf0535aa895b6325a2f9348c5cf/src/install.js#L38-L44)
+
+
+```js
+Object.defineProperty(Vue.prototype, '$router', {
+  get () { return this._routerRoot._router }
+})
+
+Object.defineProperty(Vue.prototype, '$route', {
+  get () { return this._routerRoot._route }
+})
+```
+
+上面代码使用 `defineProperty` 的时候，只设置 `get` 参数，不设置 `set` 参数，这就导致无法直接对其进行修改。
+
+我们来尝试一个例子：
+
+```js
+const obj = {
+  name: 'zwc'
+}
+
+// 只有 get
+Object.defineProperty(obj, 'age', {
+  get () { return 18 }
+})
+
+// 修改 age 属性
+obj.age = 22
+
+console.log(obj.age)
+// 结果仍然是 18
+```

@@ -99,7 +99,7 @@ Object.assign({}, { a: 1 });  // { a: 1 }
 
 ```js
 const obj = { 
-    person: { name: 'jack' } 
+  person: { name: 'jack' } 
 };
 const obj2 = Object.assign({}, obj);
 
@@ -112,5 +112,9 @@ console.log(obj2.person.name);  // "tom"
 Object.assign 可以用来处理数组，但是会把数组视为对象。
 
 ```js
-Object.assign([1, 2, 3], [4, 5]);  // [4, 5, 3]
+Object.assign([1, 2, 3], [4, 5]);
+// 合并结果是 [4, 5, 3]
 ```
+
+通过结果可以看出来，对于数组而言 Object.assign 的合并规则是将相同索引的值进行合并。
+
