@@ -12,7 +12,7 @@ group: Object
 
 `Object.create()` 方法用于创建一个新对象，并且将新对象的 `__proto__` 指向一个现有的对象。
 
-`Object.create()` 接收两个参数，第一个参数就是新对象的原型对象，第二个参数（可选）是一个用于向新建对象自身添加属性的**对象**，**对象的格式对应 [Object.defineProperty()](./07-Object.defineProperty.md) 的第二个参数**。
+`Object.create()` 接收两个参数，第一个参数就是新对象的原型对象，第二个参数（可选）是一个用于向新建对象自身添加属性的**对象**，**对象的格式对应 [Object.defineProperty()](./Object-defineProperty.md) 的第二个参数**。
 
 `Object.create()` 返回值是新创建的已经指定了原型和属性的对象。
 

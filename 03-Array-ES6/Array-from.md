@@ -180,7 +180,7 @@ const result = fillArray2(0, 3);
 // => [0, 0, 0]
 ```
 
-关于 `Array.prototype.fill` 的详细用法请移步[这里](./06-Array.prototype.fill.md)
+关于 `Array.prototype.fill` 的详细用法请移步[这里](./fill.md)
 
 
 ### 生成数字范围数组

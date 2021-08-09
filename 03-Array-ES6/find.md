@@ -14,7 +14,7 @@ group: Array ES6
 
 `find` 方法用于找出第一个符合条件的数组元素并返回，如果不存在就返回 `undefined`。
 
-类似 [forEach](../02-Array-ES5/01-Array.prototype.forEach) 和 [map](../02-Array-ES5/01-Array.prototype.map)，find 方法也接收两个参数：一个函数和函数参数执行时的上下文环境。
+类似 [forEach](../02-Array-ES5/forEach.md) 和 [map](../02-Array-ES5/map.md)，find 方法也接收两个参数：一个函数和函数参数执行时的上下文环境。
 
 不同之处在于，当函数参数返回值为 true 时，`find` 方法立即结束执行，不再继续遍历，并将使得函数参数返回值为 true 的元素作为 find 的返回值，这个元素就是“找到”的符合条件的元素。
 
