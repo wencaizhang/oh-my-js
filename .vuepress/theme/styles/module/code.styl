@@ -1,0 +1,20 @@
+{$contentClass}
+  pre, pre[class*="language-"]
+    code
+      color #333
+      font-size 14px
+
+{$contentClass}
+  code
+    color #3683d6
+    font-size 14px
+    background-color #e4f1ff
+
+div[class*='language-']
+  &::before
+    color rgba(219,73,132, 0.8)
+    font-weight 600
+
+  .highlight-lines
+    .highlighted
+      background-color rgb(196,240,223)

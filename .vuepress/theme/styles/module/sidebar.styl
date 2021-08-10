@@ -1,0 +1,33 @@
+@import "../palette.styl"
+.sidebar-heading
+  color #45526B !important
+  font-size 14px !important
+  padding 0 2.5rem !important
+  margin-top 0 !important
+  overflow hidden !important
+  text-overflow ellipsis !important
+  white-space nowrap !important
+  height 40px !important
+  line-height 40px !important
+  margin-left 5px !important
+  position relative !important
+  font-weight normal !important
+
+  &.open
+    color #3683D6 !important
+    background rgba(228, 241, 255, 1) !important
+    border-top-left-radius 25px !important
+    border-bottom-left-radius 25px !important
+
+  &:hover
+    color #3683D6 !important
+
+  &:.open .arrow
+    top -0.18em !important
+
+
+.sidebar
+  overflow-x hidden !important
+  & > .sidebar-links
+    & > li:not(:first-child)
+      margin-top 0 !important

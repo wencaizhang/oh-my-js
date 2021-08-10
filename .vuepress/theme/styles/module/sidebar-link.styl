@@ -1,0 +1,85 @@
+@import "../palette.styl"
+
+.sidebar .sidebar-sub-headers
+  padding-left 1rem !important
+  font-size 0.95em !important
+
+ul.sidebar-group-items > li > a.sidebar-link
+  display inline-block !important
+  color #45526B !important
+  border-left 0.25rem solid transparent !important
+  width 100% !important
+  box-sizing border-box !important
+  font-size 13px !important
+  padding 0 !important
+
+  back, &:hover
+    color $accentColor !important
+
+  &.active
+    color $accentColor !important
+    border-right 0.15rem solid $accentColor !important
+    font-weight bold !important
+    
+
+  .sidebar-group &
+    padding-left 4rem !important
+
+  .sidebar-sub-headers &
+    padding-top 0.25rem !important
+    padding-bottom 0.25rem !important
+    border-left none !important
+
+    &.active
+      font-weight 500 !important
+
+.sidebar-group-items li
+  line-height 20px !important
+  margin 10px 0 !important
+
+ul.sidebar-group-items .sidebar-link
+  font-size 13px !important
+  font-weight normal !important
+
+
+
+.sidebar-sub-headers
+  position fixed
+  display block
+  padding-left 50px
+  top 100px
+  right 0
+  width 150px
+  font-size 14px
+  padding-right 30px
+
+  li
+    position relative
+
+    &::before
+      content ""
+      position absolute
+      width 5px
+      height 5px
+      background #c4c9d2
+      border-radius 50%
+      top 50%
+      transform translateY(-50%)
+      left -21px
+
+    .sidebar-link
+      margin-bottom 0 !important
+      padding-left 0.25rem !important
+      position relative
+
+      &.active:before
+        content ""
+        position absolute
+        width 20px
+        height 20px
+        top 50%
+        transform translateY(-50%)
+        left -30px
+        background-image url(https://doc.cms.talelin.com/assets/img/2.8c3cb683.png)
+        background-size contain
+

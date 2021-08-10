@@ -1,0 +1,37 @@
+@require './config'
+.arrow
+  display inline-block !important
+  width 6px !important
+  height 6px !important
+
+  &.up
+    border-left 4px solid transparent !important
+    border-right 4px solid transparent !important
+    border-bottom 6px solid $arrowBgColor !important
+
+  &.down
+    border-left 0 !important
+    border-top 1px solid #3683D6 !important
+    border-right 1px solid #3683D6 !important
+    transition all 0.3s !important
+    transform rotate(-45deg) !important
+    margin-bottom -2px !important
+    margin-left 10px !important
+    position absolute !important
+    top 45% !important
+
+  &.right
+    border-bottom 0 !important
+    border-left 0 !important
+    border-top 1px solid #656565 !important
+    border-right 1px solid #656565 !important
+    transform rotate(135deg) !important
+    margin-left 10px !important
+    transition all 0.3s !important
+    position absolute !important
+    top 35% !important
+
+  &.left
+    border-top 4px solid transparent !important
+    border-bottom 4px solid transparent !important
+    border-right 6px solid $arrowBgColor !important
