@@ -52,7 +52,7 @@ arr.includes(2, 1);
 
 ### NaN 的判断
 
-首先我们知道 `NaN` 不等于 `NaN`：
+首先我们知道 `NaN` 不等于 `NaN`，无论是双等号还是全等，结果都是 `false`：
 
 ```js
 NaN == NaN  // false
@@ -60,6 +60,13 @@ NaN === NaN  // false
 ```
 
 而 `indexOf` 方法内部使用绝对相等（`===`）进行判断，因此无法判断 `NaN`，但是 `includes` 可以：
+
+```js
+const arr = [ 1, NaN, 2 ]
+
+arr.indexOf(NaN)
+```
+
 
 ```js
 const arr = [ 1, NaN, 4 ];
