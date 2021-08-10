@@ -1,0 +1,11 @@
+dependabot/npm_and_yarn/browserslist-4.16.6
+dependabot/npm_and_yarn/dns-packet-1.3.4
+dependabot/npm_and_yarn/elliptic-6.5.4
+dependabot/npm_and_yarn/ini-1.3.8
+dependabot/npm_and_yarn/lodash-4.17.21
+dependabot/npm_and_yarn/postcss-7.0.36
+dependabot/npm_and_yarn/prismjs-1.24.0
+dependabot/npm_and_yarn/ssri-6.0.2
+dependabot/npm_and_yarn/url-parse-1.5.1
+dependabot/npm_and_yarn/ws-6.2.2
+dependabot/npm_and_yarn/y18n-4.0.1
