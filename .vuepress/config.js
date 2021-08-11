@@ -25,7 +25,7 @@ module.exports = {
     editLinkText: '纠正错误',
     repo: "wencaizhang/oh-my-js",
     docsRepo: "wencaizhang/oh-my-js",
-    logo: '/left-logo.png',
+    // logo: '/left-logo.png',
     lastUpdated: '上次更新',
     sidebar: getSidebar(),
   }
@@ -112,12 +112,12 @@ function getSidebar() {
       // collapsable: false,
       children: [
         '/05-Object/Object-hasOwnProperty',
+        '/05-Object/Object-defineProperty',
         '/05-Object/Object-keys',
         '/05-Object/Object-values',
         '/05-Object/Object-entries',
         '/05-Object/Object-assign',
         '/05-Object/Object-is',
-        '/05-Object/Object-defineProperty',
         '/05-Object/Object-create',
       ],
     },

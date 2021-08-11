@@ -76,10 +76,18 @@ console.log( Object.keys(obj) );  // [ 'foo' ]
 
 ### 5. 异常处理
 
-ES5 中，如果参数是原始值，会抛出异常。ES6 中则会强制转化为一个对象。
+ES5 中，如果参数是原始值，会抛出异常（[Polyfill](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/keys#polyfill) 导致）。
+
+ES6 中则会强制转化为一个对象。
 
 ```js
 Object.keys( 'foo' );  // TypeError: "foo" is not an object (ES5 code)
+```
+
+```js
+Object.keys(3)  // []
+
+Object.keys(true)  // []
 
 Object.keys( 'foo' );  // [ '0', '1', '2' ]
 ```

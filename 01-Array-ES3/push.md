@@ -24,9 +24,42 @@ group: ES3 Array
 
 ## 示例
 
-```js
+### 参数数量可以是多个
+
+```js{4}
 var arr = [1, 2, 3];
 
 var newLength1 = arr.push(4); // 4
 var newLength2 = arr.push(5, 6); // 6
+```
+
+### 如何 push 一个数组
+
+> 利用 `apply` 实现
+
+```js{5}
+var arr = [1, 2, 3];
+
+var arr2 = [4, 5, 6];
+
+[].push.apply(arr, arr2)
+
+console.log(arr)  // [1, 2, 3, 4, 5, 6]
+console.log(arr2)  // [4, 5, 6]
+```
+
+### 如何 push 一个数组(2)
+
+> 利用扩展运算符实现
+
+
+```js{5}
+var arr = [1, 2, 3];
+
+var arr2 = [4, 5, 6];
+
+arr.push(...arr2)
+
+console.log(arr)  // [1, 2, 3, 4, 5, 6]
+console.log(arr2)  // [4, 5, 6]
 ```

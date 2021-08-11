@@ -28,6 +28,8 @@ ES6 引入 `Object.is` 方法，它用于比较两个值是否严格相等。
 
 ### 0. 基本使用
 
+接收两个参数用于对比
+
 ```js
 Object.is({}, {}); // false
 
@@ -39,15 +41,22 @@ Object.is("abc", "abc"); // true
 ```js
 console.log("5" == 5); // true
 
+console.log("5" === 5); // false
+
 console.log(Object.is("5", 5)); // false
 ```
 
 ### 2. Object.is() 和 严格相等（`===`）的区别
 
 ```js
-console.log(Object.is(NaN, NaN)); // true
 console.log(NaN === NaN); // false
 
-console.log(Object.is(-1, +1)); // false
-console.log(+1 === -1);
+console.log(Object.is(NaN, NaN)); // true
+```
+
+
+```js
+console.log(+0 === -0);  // true
+
+console.log(Object.is(-0, +0)); // false
 ```
