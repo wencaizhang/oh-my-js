@@ -1,5 +1,8 @@
 {$contentClass}
   pre, pre[class*="language-"]
+    padding-top 2.8rem
+    padding-right 1.4rem
+    padding-left 1.4rem
     code
       color #333
       font-size 14px
@@ -18,3 +21,14 @@ div[class*='language-']
   .highlight-lines
     .highlighted
       background-color rgb(196,240,223)
+
+  &::after
+    position absolute
+    top 1.2em
+    left 1.4em
+    content ""
+    width 10px
+    height 10px
+    border-radius 50%
+    background-color #ff5f56
+    box-shadow 18px 0 0 0 #ffbd2e, 36px 0 0 0 #27c93f
