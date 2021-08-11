@@ -11,7 +11,7 @@ destDir=".vuepress/dist"
 currTime1=`date +%Y-%m-%d`
 currTime2=`date +%H:%M:%S`
 commit=":rocket: deploy @${currTime1} ${currTime2}"
-repo="https://github.com/wencaizhang/oh-my-js.git"
+repo="git@github.com:wencaizhang/oh-my-js.git"
 remoteBranch="gh-pages"
 
 cp -r .github $destDir
