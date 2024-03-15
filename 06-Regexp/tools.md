@@ -3,7 +3,9 @@
 ## 正则表达式可视化
 
 - [https://regexper.com/](https://regexper.com/)
-- 中文版：[http://regexper.cn/](http://regexper.cn/)
+- 中文版：[https://regexr-cn.com/](https://regexr-cn.com/)
+- [https://extendsclass.com/regex-tester.html](https://extendsclass.com/regex-tester.html)
+- [https://softwium.com/regex-explainer/](https://softwium.com/regex-explainer/)
 
 ## any-rule
 
